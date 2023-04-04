@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Home from './pages/Home';
+import Temperature from './pages/Temperature';
+import Humidity from './pages/Humidity';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Navbar />
+        <div className='flex'>
+          <Sidebar />
+          <div className='content'>
+              <Routes> 
+                <Route path="/" exact={true} element={<Home />} />
+                <Route path="/temp" exact={true} element={<Temperature />} />
+                <Route path="/hum" exact={true} element={<Humidity/>} />
+              </Routes>
+          </div>
+        </div>
+    </Router>
   );
 }
 
