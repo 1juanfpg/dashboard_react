@@ -1,22 +1,24 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import * as FaIcons from 'react-icons/fa';
+
 const Sidebar = () =>{
     return(
         <div className="sidebar">
             <ul>
                 <li>
-                    <Link to="/">
-                        Home
-                    </Link>
+                    <NavLink to="/" activeClassName="active" className="round w-100 d-inline-block px-2">
+                        <FaIcons.FaHome className='me-2'/>Home
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/temp">
-                        Temperatura
-                    </Link>
+                    <NavLink to="/temp" activeClassName="active" className="round w-100 d-inline-block px-2">
+                        <FaIcons.FaThermometerQuarter className='me-2'/>Temperatura
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/hum">
-                        Humedad
-                    </Link>
+                    <NavLink to="/hum" activeClassName="active" className="round w-100 d-inline-block px-2">
+                        <FaIcons.FaTint className='me-2'/>Humedad
+                    </NavLink>
                 </li>
             </ul>
         </div>

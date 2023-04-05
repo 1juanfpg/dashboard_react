@@ -1,5 +1,6 @@
 // importamos la fuente a usar  
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+  @import "~bootstrap/scss/bootstrap";
 
 // body
 *{
@@ -18,26 +19,40 @@ body{
 // colors
 $ligth: #ffffff;
 $gray: #c4ccde;
+$gray2: #e7e9eb;
+$beige: #E5D9B6;
+$eart: #285430;
+$nature: #5F8D4E;
+$green: #A4BE7B;
+
 
 // components
-.navbar {
- border-color: $ligth;
- padding: 1rem 2rem;
- border-bottom: 1px solid $gray;
-}
-
+// .navbar {
+//   border-color: $ligth;
+// //  padding: 1rem 2rem;
+//   border-bottom: 1px solid $gray;
+// }
 .sidebar {
   width: 14rem;
   height: calc(100vh - 52px);
-  border-right: 1px solid $gray;
+  background-color: $eart;
+  // border-right: 1px solid $gray;
   ul{
     list-style: none;
-    padding: 1rem 2rem;
+    padding: 1rem;
     li{
       margin-bottom: 1rem;
       a{
         text-decoration: none;
+        color: $ligth;
+        &.active{
+          background-color: $green;
+        }
       }
     }
   }
+}
+
+.content-section{
+  background-color: $beige;
 }

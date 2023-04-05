@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import NavbarNav from './components/NavbarNav';
 import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import Temperature from './pages/Temperature';
@@ -9,10 +9,10 @@ import './App.scss';
 function App() {
   return (
     <Router>
-        <Navbar />
+        <NavbarNav />
         <div className='flex'>
           <Sidebar />
-          <div className='content'>
+          <div className='contentn w-100'>
               <Routes> 
                 <Route path="/" exact={true} element={<Home />} />
                 <Route path="/temp" exact={true} element={<Temperature />} />
