@@ -9,6 +9,9 @@
 }
 
 body{
+  background: rgb(40,84,48);
+  background: linear-gradient(90deg, rgba(40,84,48,1) 0%, rgba(61,128,73,1) 50%, rgba(73,154,87,1) 100%);
+  color: #ffffff;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -26,6 +29,13 @@ $nature: #5F8D4E;
 $green: #A4BE7B;
 
 
+
+.nav-tabs .nav-link {
+  color: #ffffff;
+}
+.tab-user {
+  background-color: #E5D9B6;
+}
 // components
 // .navbar {
 //   border-color: $ligth;

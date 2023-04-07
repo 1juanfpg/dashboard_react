@@ -1,0 +1,43 @@
+.tg  {
+    border: 0px solid;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgba(40, 83, 48, 0.75);
+    font-size: 12px;
+    width: auto;
+    text-align: center;
+}
+
+.tg td{
+    border-style:solid;
+    
+    border-width:0px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th{
+    border-style:solid;
+    border-width:0px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-baqh{
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-nrix{
+    text-align:center;
+    vertical-align:middle
+}
+
+.cell-light {
+    background-color: rgba(40, 83, 48, 0.25) !important;
+}
+
+form label{
+    color: #000000;
+}
