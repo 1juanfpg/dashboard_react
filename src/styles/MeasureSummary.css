@@ -41,3 +41,13 @@
 form label{
     color: #000000;
 }
+
+.input-date{
+    color: #000000;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.invalid{
+    background-color: hsla(0, 100%, 51%, 0.452) !important;
+}

@@ -1,6 +1,9 @@
 import { MeasureSummary } from './MeasureSummary'
 import { LiveMeasure } from './LiveMeasure';
 
+import { RiLiveLine } from 'react-icons/ri';
+import { MdOutlineSummarize } from 'react-icons/md';
+
 export const PrincipalBody = () => {
     return (
         <>
@@ -17,7 +20,7 @@ export const PrincipalBody = () => {
                         aria-controls="nav-live" 
                         aria-selected="true"
                         >
-                            Live
+                            <RiLiveLine /> Live
                     </button>
                     <button
                         className="nav-link"
@@ -29,7 +32,7 @@ export const PrincipalBody = () => {
                         aria-controls="nav-summay" 
                         aria-selected="false"
                         >
-                            Summary
+                            <MdOutlineSummarize /> Summary
                     </button>
                 </div>
             </nav>
